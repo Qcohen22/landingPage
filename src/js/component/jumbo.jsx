@@ -1,7 +1,7 @@
 import React from "react";
 const Football = () => {
 	let obj = {
-		marginLeft: "1000px",
+		marginLeft: "1055px",
 	};
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-dark">

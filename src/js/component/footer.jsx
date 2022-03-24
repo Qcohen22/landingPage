@@ -1,9 +1,12 @@
 import React from "react";
 
 const Google = () => {
+	let football = {
+		margin: "0 auto",
+	};
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-dark">
-			<a className="navbar-brand text-white" href="#">
+			<a className="navbar-brand text-white " href="#" style={football}>
 				2022
 			</a>
 			<button
