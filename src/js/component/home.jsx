@@ -1,83 +1,101 @@
 import React from "react";
-
+import Football from "./jumbo.jsx";
 //include images into your bundle
-
+import Apecoin from "./Football.jsx";
+import Google from "./footer.jsx";
 //create your first component
 const Home = () => {
+	let obj = {
+		width: "50%",
+		margin: "0 auto",
+	};
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light">
-				<a className="navbar-brand" href="#">
-					Navbar
-				</a>
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
-				</button>
-				<div className="collapse navbar-collapse" id="navbarNav">
-					<ul className="navbar-nav">
-						<li className="nav-item active">
-							<a className="nav-link" href="#">
-								Home <span className="sr-only">(current)</span>
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">
-								Features
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#">
-								Pricing
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link disabled" href="#">
-								Disabled
-							</a>
-						</li>
-					</ul>
+			<Football />
+			<Apecoin />
+			<div class="card-group" style={obj}>
+				<div class="card">
+					<img
+						src="https://picsum.photos/200/300?random=1"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This is a wider card with supporting text below as a
+							natural lead-in to additional content. This content
+							is a little bit longer.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
 				</div>
-			</nav>
-			<div className="jumbotron">
-				<h1 className="display-4">Hello, world!</h1>
-				<p className="lead">
-					This is a simple hero unit, a simple jumbotron-style
-					component for calling extra attention to featured content or
-					information.
-				</p>
-				<p>
-					It uses utility classes for typography and spacing to space
-					content out within the larger container.
-				</p>
-				<p className="lead">
-					<a
-						className="btn btn-primary btn-lg"
-						href="#"
-						role="button">
-						Learn more
-					</a>
-				</p>
-			</div>
-			<div class="card" style={{ width: "18rem" }}>
-				<img class="card-img-top" src="..." alt="Card image cap"></img>
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">
-						Some quick example text to build on the card title and
-						make up the bulk of the card's content.
-					</p>
-					<a href="#" class="btn btn-primary">
-						Go somewhere
-					</a>
+				<div class="card">
+					<img
+						src="https://picsum.photos/200/300?random=2"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This is a wider card with supporting text below as a
+							natural lead-in to additional content. This content
+							is a little bit longer.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="https://picsum.photos/200/300?random=3"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This card has supporting text below as a natural
+							lead-in to additional content.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img
+						src="https://picsum.photos/200/300?random=4"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This is a wider card with supporting text below as a
+							natural lead-in to additional content. This card has
+							even longer content than the first to show that
+							equal height action.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">
+								Last updated 3 mins ago
+							</small>
+						</p>
+					</div>
 				</div>
 			</div>
+			<Google />
 		</div>
 	);
 };
